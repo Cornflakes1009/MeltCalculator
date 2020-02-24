@@ -6,6 +6,9 @@
 //  Copyright © 2020 HaroldDavidson. All rights reserved.
 //
 
+// global variable for performing calculations. Starts at to represent USD. Will change if user changes currency.
+var currencyMultiplier: Double = 1.0
+
 import Foundation
 struct Currencies: Codable {
     let XPT: String
@@ -32,8 +35,8 @@ func getCurrencyData() {
         URLSession.shared.dataTask(with: url) { data, _, err in
             
             if let data = data {
-                let currencies = try? JSONDecoder().decode(Exchange.self, from: data)
-                print(currencies)
+                //let currencies = try? JSONDecoder().decode(Exchange.self, from: data)
+                //print(currencies)
                 //print(data)
             }
         }.resume()

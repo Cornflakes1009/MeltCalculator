@@ -27,7 +27,7 @@ class UnitSelectionViewController: UIViewController {
     
     let instructionLabel: UILabel = {
         let label = UILabel()
-        label.text = "Select Type"
+        //label.text = "Select Type"
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 20)
         label.textColor = .black
@@ -45,25 +45,26 @@ class UnitSelectionViewController: UIViewController {
         
         switch currency {
         case .platinum:
+            instructionLabel.text = "Select Type of Platinum"
             setupPlatinumStackViewButtons(view: view, label: instructionLabel)
             break
         case .palladium:
+            instructionLabel.text = "Select Type of Palladim"
             setupPalladiumStackViewButtons(view: view, label: instructionLabel)
             break
         case .silver:
+            instructionLabel.text = "Select Type of Silver"
             setupSilverStackViewButtons(view: view, label: instructionLabel)
             break
         case .gold:
-            // gold view
+            instructionLabel.text = "Select Type of Gold"
+            setupGoldStackViewButtons(view: view, label: instructionLabel)
             break
-        case .cryptos:
-            // crypto view
-            break
-        case .currency:
-            // currency view
+        default:
+            // returning back to main screen in event of mistakenly getting to this VC without setting a currency
+            self.navigationController?.popViewController(animated: true)
             break
         }
-        
     }
     
     // MARK: Platinum
@@ -130,7 +131,7 @@ class UnitSelectionViewController: UIViewController {
     }
 
     @objc func platinumTroyOuncesTapped() {
-        print("troy tapped")
+        print("platinum troy tapped")
     }
     
     // MARK: Palladium
@@ -144,7 +145,7 @@ class UnitSelectionViewController: UIViewController {
             button.layer.cornerRadius = 5
             button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
             
-            button.addTarget(self, action: #selector(platinumTroyOuncesTapped), for: .touchUpInside)
+            button.addTarget(self, action: #selector(palladiumTroyOuncesTapped), for: .touchUpInside)
             return button
         }()
         
@@ -197,7 +198,7 @@ class UnitSelectionViewController: UIViewController {
     }
 
     @objc func palladiumTroyOuncesTapped() {
-        print("troy tapped")
+        print("palladium troy tapped")
     }
     
     // MARK: Silver

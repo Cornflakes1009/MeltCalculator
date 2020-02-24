@@ -191,14 +191,14 @@ class ViewController: UIViewController {
     
     @objc func cryptosTapped() {
         // perform segue to platinumVC
-        let vc = self.storyboard?.instantiateViewController(identifier: "UnitSelectionViewController") as! UnitSelectionViewController
+        let vc = self.storyboard?.instantiateViewController(identifier: "CalculationViewController") as! CalculationViewController
         self.navigationController?.pushViewController(vc, animated: true)
         vc.currency = .cryptos
     }
     
     @objc func currencyTapped() {
         // perform segue to platinumVC
-        let vc = self.storyboard?.instantiateViewController(identifier: "UnitSelectionViewController") as! UnitSelectionViewController
+        let vc = self.storyboard?.instantiateViewController(identifier: "CalculationViewController") as! CalculationViewController
         self.navigationController?.pushViewController(vc, animated: true)
         vc.currency = .currency
     }
