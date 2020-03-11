@@ -11,7 +11,7 @@ import UIKit
 class CalculationViewController: UIViewController {
     
     var currency: Currency = .gold
-    var currencyType = ""
+    //var currencyType = ""
     var selectedCurrency = ""
     var pickerViewItems = [String]()
     var spotPercentage: Double = 100
@@ -47,6 +47,23 @@ class CalculationViewController: UIViewController {
         return tf
     }()
     
+    let calculateButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("CALCULATE", for: .normal)
+        button.backgroundColor = UIColor.rgb(red: 217, green: 217, blue: 217, alpha: 1)
+        button.setTitleColor(.black, for: .normal)
+        button.layer.cornerRadius = 5
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        
+        return button
+    }()
+    
+    let bannerView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.rgb(red: 0, green: 0, blue: 255, alpha: 1)
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,6 +75,15 @@ class CalculationViewController: UIViewController {
         
         view.addSubview(pickerViewTextField)
         pickerViewTextField.anchor(top: instructionLabel.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 40, paddingBottom: 0, paddingRight: 40, width: 0, height: 50)
+        
+        view.addSubview(bannerView)
+        bannerView.anchor(top: nil, left: nil, bottom: view.bottomAnchor, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: -20, paddingRight: 0, width: 281, height: 50)
+        bannerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+//        view.addSubview(calculateButton)
+//        calculateButton.anchor(top: bannerView.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 0, paddingLeft: 40, paddingBottom: 40, paddingRight: 40, width: 0, height: 100)
+        
+        
         
         switch currency {
         case .platinum:
@@ -95,7 +121,7 @@ class CalculationViewController: UIViewController {
     }
     
     func createPickerViewToolbar() {
-        let toolBar = UIToolbar()
+        let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         toolBar.sizeToFit()
         
         let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(dismissPickerView))
@@ -135,19 +161,7 @@ class CalculationViewController: UIViewController {
             return tf
         }()
         
-        let calculateButton: UIButton = {
-            let button = UIButton(type: .system)
-            button.setTitle("CALCULATE", for: .normal)
-            button.backgroundColor = UIColor.rgb(red: 217, green: 217, blue: 217, alpha: 1)
-            button.setTitleColor(.black, for: .normal)
-            button.layer.cornerRadius = 5
-            button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-            
-            return button
-        }()
-        
-        
-        let stackView = UIStackView(arrangedSubviews: [quantityTextField, spotTextField, calculateButton])
+        let stackView = UIStackView(arrangedSubviews: [quantityTextField, spotTextField])
         stackView.distribution = .fillEqually
         stackView.axis = .vertical
         stackView.spacing = 10
