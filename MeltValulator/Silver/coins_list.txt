@@ -1,0 +1,97 @@
+US Coins
+
+Silver Eagle
+Peace $1 1934-1935
+Peace $1 1921-1928
+Morgan $1 1878-1904
+Morgan $ 1921
+Trade $1 1873-1885
+Seated Lib. $1 1840-1874
+Gobrecht $1 1836-1839
+Draped Bust $1 1795-1804
+Kennedy $.50 1965-1970
+Kennedy $.50 1964
+Franklin $.50 1948-1963
+Walking Liberty $.50 1916-1947
+
+World Coins
+
+Australia Threepence (1910-1944)
+Australia Threepence (1947-1964)
+Australia Sixpence (1910-1945)
+Australia Sixpence (1946-1963)
+Australia Shilling (1910-1944)
+Australia Shilling (1946-1963)
+Australia Florin (1910-1945)
+Australia Florin (1946-1963)
+Australia Crown (1937-1938)
+Canada Five Cents (1858-1919)
+Canada Five Cents (1920-1921)
+Canada Dime (1858-1919)
+Canada Dime (1920-1967)
+Canada Dime (1967-1968)
+Canada Quarter (1870-1919)
+Canada Quarter (1920-1967)
+Canada Quarter (1967-1968)
+Canada Half Dollar (1870-1919)
+Canada Half Dollar (1920-1967)
+Canada Dollar (1935-1967)
+France Franc (1871-1920)
+France 2 Francs (1870-1920)
+German 1/2 Mark (1905-1919)
+German Mark (1873-1916)
+German Mark (1924-1927)
+German 2 Mark (1925-1931)
+German 2 Mark (1933-1939)
+British Threepence (1817-1920)
+British Threepence (1920-1946)
+British Sixpence (1816-1920)
+British Sixpence (1920-1946)
+British Shilling (1816-1919)
+British Shilling (1920-1946)
+British Florin (1848-1919)
+British Florin (1920-1946)
+British 1/2 Crown (1816-1919)
+British 1/2 Crown (1920-1946)
+British Crown (1818-1902)
+British Crown (1927-1935)
+Mexico 5 Centavo (1864-1905)
+Mexico 10 Centavo (1864-1905)
+Mexico 10 Centavo (1905-1919)
+Mexico 10 Centavo (1925-1935)
+Mexico 20 Centavo (1898-1905)
+Mexico 20 Centavo (1905-1919)
+Mexico 20 Centavo (1920-1943)
+Mexico 25 Centavo (1869-1890)
+Mexico 25 Centavo (1950-1953)
+Mexico 50 Centavo (1866-1895)
+Mexico 50 Centavo (1905-1919)
+Mexico 50 Centavo (1919-1945)
+Mexico 50 Centavo (1935)
+Mexico 50 Centavo (1950-1951)
+Mexico Peso (1866-1914)
+Mexico Peso (1918-1919)
+Mexico Peso (1920-1945)
+Mexico Peso (1947-1949)
+Mexico Peso (1950)
+Mexico Peso (1957-1867)
+Mexico 2 Peso (1921)
+Mexico 5 Peso (1947-1948)
+Mexico 5 Peso (1950-1954)
+Mexico 5 Peso (1955-1959)
+Mexico 10 Peso (1955-1960)
+Mexico 25 Peso (1968-1972)
+Mexico 100 Peso (1977-1979)
+Mexico Onza (1949-Date)
+
+Troy Ounces, Pennyweight, Grams, Grains
+999.9
+999
+958(Britannia)
+925 (sterlin)
+916H (Finnish 935 silver)
+900 (coin silver)
+835
+830
+800
+

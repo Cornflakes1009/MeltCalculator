@@ -1,0 +1,21 @@
+Helpful link: https://github.com/onmyway133/Dropdowns
+
+
+
+Open the app
+either choose material or currency
+
+get currency multiplier
+- set as 1 by default
+- reassign to API called value otherwise
+
+
+get the usd cost of each material
+calculate the cost of each metal per oz, troy ounce, gram, grain, pennyweight
+calculate the cost of each metal at each coin if applicable
+
+
+
+20 Platinum
+12 Paladium 
+118 silver

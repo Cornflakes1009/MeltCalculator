@@ -1,0 +1,5 @@
+USD
+CAD
+AUD
+EUR
+GBP
